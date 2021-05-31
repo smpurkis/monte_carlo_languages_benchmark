@@ -70,16 +70,16 @@ end
 
 nMC = 10000000
 n = 10
-estimate_pi_thread(1000)
-@time for j in 1:n
-    pi_est = estimate_pi_thread(nMC)
-    println(pi_est)
-end
+# estimate_pi_thread(1000)
+# @time for j in 1:n
+#     pi_est = estimate_pi_thread(nMC)
+#     # println(pi_est)
+# end
 
 estimate_pi(1000)
 @time for j in 1:n
     pi_est = estimate_pi(nMC)
-    println(pi_est)
+    # println(pi_est)
 end
 
 # estimate_pi_dot(100)

@@ -40,24 +40,24 @@ estimate_pi_numba(1000)
 s = time()
 for i in range(n):
     pi_est = estimate_pi_numba(nMC)
-    print(pi_est)
-print(time() - s)
+    # print(pi_est)
+print("numba time taken:", time() - s)
 
 estimate_pi_numba_prange(1000)
 s = time()
 for i in range(n):
     pi_est = estimate_pi_numba_prange(nMC)
-    print(pi_est)
-print(time() - s)
+    # print(pi_est)
+print("numba (parallel) time taken:", time() - s)
 
 s = time()
 for i in range(n):
     pi_est = estimate_pi_cy(nMC)
-    print(pi_est)
-print(time() - s)
+    # print(pi_est)
+print("cython time taken:", time() - s)
 
 s = time()
 for i in range(n):
     pi_est = estimate_pi_nim(nMC)
-    print(pi_est)
-print(time() - s)
+    # print(pi_est)
+print("nim time taken:", time() - s)
